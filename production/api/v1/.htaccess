@@ -1,0 +1,23 @@
+RewriteEngine On # Turn on the rewriting engine
+
+#url mahasiswa
+RewriteRule ^mahasiswa/?$ mahasiswa.php [NC,L]
+RewriteRule ^mahasiswa/([0-9]+)/?$ mahasiswa.php?nim=$1 [NC,L]
+
+#url login
+RewriteRule ^login/?$ login.php [NC,L]
+
+#url Event
+RewriteRule ^event/?$ event.php [NC,L]
+RewriteRule ^event/([0-9]+)/?$ event.php?id_event=$1 [NC,L]
+
+#url Freelance
+RewriteRule ^freelance/?$ freelance.php [NC,L]
+RewriteRule ^freelance/([0-9]+)/?$ freelance.php?id_freelance=$1 [NC,L]
+
+#url Denah
+RewriteRule ^denah/?$ denah.php [NC,L]
+RewriteRule ^denah/([0-9]+)/?$ denah.php?id_denah=$1 [NC,L]
+
+#url Gambar Denah
+RewriteRule ^gambardenah/?$ gambardenah.php [NC,L]
